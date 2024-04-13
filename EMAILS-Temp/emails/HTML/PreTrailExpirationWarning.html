@@ -2401,7 +2401,83 @@
 																				<!-- END Section - Intro -->
 
 																				<!-- Section - Offers -->
+
 																				<table width="100%" border="0"
+																					cellspacing="0" cellpadding="0">
+																					<tr>
+																						{% for item in items %}
+																						<td class="py-50"
+																							style="padding-top: 0px; padding-bottom: 50px;">
+																							<table width="100%"
+																								border="0"
+																								cellspacing="0"
+																								cellpadding="0">
+																								<tr>
+																									<th class="column-top"
+																										valign="top"
+																										width="240"
+																										style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
+																										<table
+																											width="100%"
+																											border="0"
+																											cellspacing="0"
+																											cellpadding="0">
+																											<tr>
+																												<td class="p-30 mpx-15"
+																													style="border-radius: 10px; padding: 30px;"
+																													bgcolor="#F3F5F9">
+																													<table
+																														width="100%"
+																														border="0"
+																														cellspacing="0"
+																														cellpadding="0">
+																														<tr>
+																															<td>
+																																<table
+																																	width="100%"
+																																	border="0"
+																																	cellspacing="0"
+																																	cellpadding="0"
+																																	style="position: relative; z-index: 1; margin-top: -90px;">
+																																	<tr>
+																																		<td class="img-center pb-20"
+																																			style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom: 20px;">
+																																			<!-- Here goes the icon, you can use {{ item.icon }} -->
+																																		</td>
+																																	</tr>
+																																</table>
+																															</td>
+																														</tr>
+																														<tr>
+																															<td class="title-20 a-center c-purple l-purple pb-5"
+																																style="font-size:20px; line-height:24px; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; text-align:center; color:#0575E6; padding-bottom: 5px;">
+																																<strong>{{
+																																	item.title
+																																	}}</strong>
+																															</td>
+																														</tr>
+																														<tr>
+																															<td class="text-16 lh-26 c-black l-black a-center"
+																																style="font-size:16px; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; line-height: 26px; color:#282828; text-align:center;">
+																																{{
+																																item.text
+																																}}
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</th>
+																								</tr>
+																							</table>
+																						</td>
+																						{% endfor %}
+																					</tr>
+																				</table>
+
+
+																				<!-- <table width="100%" border="0"
 																					cellspacing="0" cellpadding="0">
 																					<tr>
 																						<td class="py-50"
@@ -2440,7 +2516,7 @@
 																																	<tr>
 																																		<td class="img-center pb-20"
 																																			style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom: 20px;">
-																																			
+
 																																		</td>
 																																	</tr>
 																																</table>
@@ -2505,7 +2581,7 @@
 																																	<tr>
 																																		<td class="img-center pb-20"
 																																			style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom: 20px;">
-																																			
+
 																																		</td>
 																																	</tr>
 																																</table>
@@ -2535,7 +2611,7 @@
 																							</table>
 																						</td>
 																					</tr>
-																				</table>
+																				</table> -->
 																				<!-- END Section - Offers -->
 
 																				<!-- Button -->
@@ -2603,7 +2679,7 @@
 											</table>
 											<!-- END Container -->
 
-											
+
 											<!-- Section - Separator Line -->
 											<table width="100%" border="0" bgcolor="#fff" cellspacing="0"
 												cellpadding="0">
